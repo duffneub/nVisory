@@ -134,12 +134,13 @@ section {
             // Background Icon
             > svg {
                 position: absolute;
-                bottom: 1rem;
+                top: 1rem;
                 left: -4rem;
 
-                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
 
-                fill: rgba(0, 0, 0, 0.03)
+                fill: rgba(0, 0, 0, 0.02)
             }
 
             header {
@@ -217,7 +218,7 @@ section {
         grid-gap: 8rem;
     }
 
-    padding: 6rem 0 8rem 0;
+    padding: 6rem 6rem 8rem 6rem;
 
 }
 
@@ -313,25 +314,26 @@ img.brand {
     object-fit: contain;
 }
 
-// Screen width < 600px
+// Screen width < 800px
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     section.hero {
         .logo {
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
 
         .nav-bar {
             flex-direction: column;
 
             nav {
+                width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
 
                 a {
                     font-size: 1.3rem;
                     padding: 1rem 2rem 1rem 0;
-                    text-align: left;
+                    text-align: center;
                 }
             }
         }
