@@ -230,12 +230,13 @@ section {
         grid-gap: 8rem;
     }
 
-    padding: 6rem 6rem 8rem 6rem;
+    padding: 6rem 0 8rem 0;
 
 }
 
 #clients {
     .container {
+        padding: 0 2rem;
         max-width: 90rem;
 
         header {
@@ -281,6 +282,7 @@ footer {
     height: 100%;
     max-width: 120rem;
     margin: 0 auto;
+    padding: 0 6rem;
 }
 
 .button {
