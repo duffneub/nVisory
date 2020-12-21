@@ -183,6 +183,7 @@ section {
 
             img {
                 width: 75%;
+                max-width: 75vh;
                 object-fit: cover;
                 border-radius: 100%;
             }
@@ -396,5 +397,18 @@ img.brand {
 
     .container {
         padding: 0 2rem;
+    }
+}
+
+// Screen height < 500px
+
+@media only screen and (max-height: 500px) {
+    section.hero {
+        .content {
+            position: relative;
+            top: inherit;
+            left: inherit;
+            transform: inherit;
+        }
     }
 }
