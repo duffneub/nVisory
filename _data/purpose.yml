@@ -1,0 +1,11 @@
+description: Three core value-principles guide our client engagements.
+values:
+  - name: Quick Results
+    icon: svg/optimization-timer.svg
+    description: We use our 30-60-90 day engagement approach for quick-wins and tailor our approach to our clients culture and desired outcomes, regardless of the size of the organization or services required.
+  - name: Strategic Insights
+    icon: svg/presentation-board-graph.svg
+    description: Our team has in-depth hands-on business leadership and transformational program experience that enables rapid issue identification and recommendations to quickly course correct and minimize spend.
+  - name: Self-Sufficient
+    icon: svg/cog.svg
+    description: We work hand-in-hand with your teams and provide the necessary coaching and enablement support for them to lead from the front.

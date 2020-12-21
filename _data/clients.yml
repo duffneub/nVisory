@@ -1,0 +1,10 @@
+- name: Payless
+  logo: /assets/img/payless.png
+- name: IBM
+  logo: /assets/img/ibm.png
+- name: Intrigo
+  logo: /assets/img/intrigo.png
+- name: iOLAP
+  logo: /assets/img/iolap.png
+- name: HEPACO
+  logo: /assets/img/hepaco.png

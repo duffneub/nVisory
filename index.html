@@ -1,0 +1,165 @@
+---
+---
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>nVisory</title>
+    <meta name="description" content="A network of strategic advisors, operating globally.">
+
+    <!-- Media Queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" media="screen"/>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Home</title>
+  </head>
+  <body>
+
+    <section class="hero">
+      <div class="container">
+        <div class="nav-bar">
+          <div class="logo">
+            {% include svg/logo-color.svg %}
+            {% include svg/text-logo.svg %}
+          </div>
+  
+          <nav>
+            {% for item in site.data.navigation %}
+              <a href="{{ item.link }}">{{ item.title }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+
+        <div class="content">
+          <header>
+            <h1>{{ site.data.hero.headline }}</h1>
+            <p>{{ site.data.hero.description }}</p>
+          </header>
+        
+          <a href="#purpose" class="button">{{ site.data.hero.cta }}</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="purpose">
+      <div class="container">
+        <header>
+          <h2>Our <span>Purpose</span></h2>
+          <p>{{ site.data.purpose.description }}</p>
+        </header>
+
+        <div class="items col-3">
+          {% for value in site.data.purpose.values %}
+            <div class="item">
+              <header>
+                {% include {{ value.icon }} %}
+                <h3>{{ value.name }}</h3>
+              </header>
+              <p>{{ value.description }}</p>
+              {% include {{ value.icon }} %}
+            </div>
+          {% endfor %}
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <header>
+          <h2>Our <span>Team</span></h2>
+          <p>{{ site.data.team.description }}</p>
+        </header>
+
+        <div class="items col-2">
+          {% for member in site.data.team.members %}
+            <figure>
+              <img src="{{ member.headshot }}" alt="{{ member.name }}">
+              <figcaption>
+
+                <header>
+                  <h5>{{ member.name }}</h5>
+                  <p>{{ member.position }}</p>
+                </header>
+
+                <p>{{ member.bio }}</p>
+
+              </figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <header>
+          <h2>Our <span>Services</span></h2>
+          <p>{{ site.data.services.description }}</p>
+        </header>
+
+        <div class="items col-2">
+          {% for service in site.data.services.services %}
+            <div class="item">
+              <header>
+                {% include {{ service.icon }} %}
+                <h3>{{ service.name }}</h3>
+              </header>
+              <ul>
+                {% for item in service.description %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+              {% include svg/pen.svg %}
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <header>
+          <h2>Our <span>Clients</span></h2>
+        </header>
+
+        <div class="items col-5">
+          {% for brand in site.data.clients %}
+            <div class="item">
+              <img class="brand" src="{{ brand.logo }}" alt="{{ brand.name }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="logo">
+          {% include svg/logo-white.svg %}
+          {% include svg/text-logo.svg %}
+        </div>
+
+        <p>&copy;nVisory LLC 2020</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

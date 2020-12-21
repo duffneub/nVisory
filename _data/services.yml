@@ -1,0 +1,30 @@
+description: We provide services that are deliverable based, scalable, and goal attaining.
+services:
+  - name: Evaluate
+    icon: svg/pen.svg
+    description:
+      - Program Health Checks &amp; Quality Assurance
+      - Solution Selection &amp; System Integrator Assessments
+      - Organizational Readiness Assessment
+      - Analytics &amp; Performance Management
+  - name: Envision
+    icon: svg/maps.svg
+    description:
+      - IT / Digital Strategies & Business case Validation
+      - Implementation Planning & Roll-out Strategies
+      - Acquisition Due Diligence & Merger Integration Planning
+      - Contract Reviews & Negotiation Support
+  - name: Execute
+    icon: svg/target.svg
+    description:
+      - C-Level Operations, Program &amp; Transitional Roles
+      - Project &amp; Risk Assessments
+      - Stakeholder &amp;  Change Management
+      - Staff Augmentation &amp; Recruiting
+  - name: Excel
+    icon: svg/gauge.svg
+    description:
+      - Executive Program Management &amp; Steering Committee Leadership
+      - Business Process Optimization
+      - Retained Advisory &amp; Benefits Realization
+      - Executive Support, Coaching &amp; Development
